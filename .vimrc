@@ -60,7 +60,7 @@ Plugin 'stephpy/vim-php-cs-fixer'
 
 " Theme / Interface
 Plugin 'AnsiEsc.vim'
-Plugin 'ryanoasis/vim-devicons'
+" Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sjl/badwolf'
@@ -80,6 +80,9 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'atelierbram/Base2Tone-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'dylanaraps/wal.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'dikiaap/minimalist'
+Plugin 'kristijanhusak/vim-hybrid-material'
 
 " Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
@@ -137,18 +140,20 @@ set t_Co=256
 " endif
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme spacegray
+colorscheme PaperColor
+set background=dark
+set guifont=DroidSansMono_Nerd_Font:h11
 "colorscheme wal
 
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 
 " Vim-Airline Configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1 
-let g:airline_theme='hybrid'
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 
+ let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1 
+" let g:airline_theme='hybrid'
+" let g:hybrid_custom_term_colors = 1
+" let g:hybrid_reduced_contrast = 1 
 
 " Syntastic Configuration
 set statusline+=%#warningmsg#
